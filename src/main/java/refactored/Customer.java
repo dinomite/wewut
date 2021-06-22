@@ -1,4 +1,4 @@
-package io.github.msingle;
+package refactored;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -49,25 +49,18 @@ public class Customer {
         for (Rental rental : rentals) {
             result += "\t" + rental.getLineItem() + "\n";
         }
-        result += "Amount owed is " + getTotalCharge() +
-                "\n" + "You earned " +
-                getTotalPoints() +
-                " frequent renter points";
+        result += "Amount owed is " + getTotalCharge() + "\n" +
+                "You earned " + getTotalPoints() + " frequent renter points";
         return result;
     }
 
     public String htmlStatement() {
-        String result = "<h1>Rental record for <em>" +
-                getName() + "</em></h1>\n";
+        String result = "<h1>Rental record for <em>" + getName() + "</em></h1>\n";
         for (Rental rental : rentals) {
-            result += "<p>" + rental.getLineItem() +
-                    "</p>\n";
+            result += "<p>" + rental.getLineItem() + "</p>\n";
         }
-        result += "<p>Amount owed is <em>" +
-                getTotalCharge() +"</em></p>\n" +
-                "<p>You earned <em>" +
-                getTotalPoints() +
-                " frequent renter points</em></p>";
+        result += "<p>Amount owed is <em>" + getTotalCharge() + "</em></p>\n" +
+                "<p>You earned <em>" + getTotalPoints() + " frequent renter points</em></p>";
         return result;
     }
 }

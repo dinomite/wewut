@@ -1,6 +1,6 @@
-package io.github.msingle;
+package refactored;
 
-import static io.github.msingle.Movie.Type.*;
+import static refactored.Movie.Type.*;
 
 public class ObjectMother {
     public static Customer customerWithOneOfEachRentalType(

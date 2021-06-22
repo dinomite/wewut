@@ -1,14 +1,13 @@
-package io.github.msingle;
+package refactored;
 
 public class NewReleasePrice extends Price {
-
     @Override
-    double getCharge(int daysRented) {
+    public double getCharge(int daysRented) {
         return daysRented * 3;
     }
 
     @Override
-    int getPoints(int daysRented) {
+    public int getPoints(int daysRented) {
         if (daysRented > 1) {
             return 2;
         }

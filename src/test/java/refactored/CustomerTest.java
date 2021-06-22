@@ -1,12 +1,12 @@
-package io.github.msingle;
+package refactored;
+
+import org.junit.Test;
+
+import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 
-import java.util.List;
-import org.junit.Test;
-
 public class CustomerTest {
-
     @Test
     public void noRentalsStatement() {
         assertEquals(

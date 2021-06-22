@@ -1,14 +1,12 @@
-package io.github.msingle;
+package original;
 
 public class Rental {
-
     Movie movie;
     private int daysRented;
 
     public Rental(Movie movie, int daysRented) {
         this.movie = movie;
         this.daysRented = daysRented;
-
     }
 
     public Movie getMovie() {
@@ -23,11 +21,11 @@ public class Rental {
         return movie.getCharge(daysRented);
     }
 
-    public String getLineItem() {
-        return movie.getTitle() + " " + getCharge();
-    }
-
     public int getPoints() {
         return movie.getPoints(daysRented);
+    }
+
+    public String getLineItem() {
+        return movie.getTitle() + " " + getCharge();
     }
 }

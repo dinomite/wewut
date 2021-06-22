@@ -1,7 +1,6 @@
-package io.github.msingle;
+package original;
 
 public class Movie {
-
     public enum Type {
         REGULAR, NEW_RELEASE, CHILDREN, UNKNOWN;
     }
@@ -18,7 +17,8 @@ public class Movie {
         return title;
     }
 
-    private void setPriceCode(Movie.Type priceCode) {
+    private void setPriceCode(
+            Movie.Type priceCode) {
         switch (priceCode) {
             case CHILDREN:
                 price = new ChildrensPrice();
@@ -29,8 +29,9 @@ public class Movie {
             case REGULAR:
                 price = new RegularPrice();
                 break;
-                default:
-                    throw new IllegalArgumentException("invalid price code");
+            default:
+                throw new IllegalArgumentException(
+                        "invalid price code");
         }
     }
 
