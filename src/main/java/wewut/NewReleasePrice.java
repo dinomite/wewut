@@ -1,4 +1,4 @@
-package refactored;
+package wewut;
 
 public class NewReleasePrice extends Price {
     @Override
@@ -7,10 +7,9 @@ public class NewReleasePrice extends Price {
     }
 
     @Override
-    public int getPoints(int daysRented) {
-        if (daysRented > 1) {
+    int getPoints(int daysRented) {
+        if (daysRented > 1)
             return 2;
-        }
         return 1;
     }
 }

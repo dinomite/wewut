@@ -1,8 +1,12 @@
-package original;
+package wewut.original;
 
-import static original.Movie.Type.CHILDREN;
-import static original.Movie.Type.NEW_RELEASE;
-import static original.Movie.Type.REGULAR;
+import wewut.Customer;
+import wewut.Movie;
+import wewut.Rental;
+
+import static wewut.Movie.Type.CHILDREN;
+import static wewut.Movie.Type.NEW_RELEASE;
+import static wewut.Movie.Type.REGULAR;
 
 public class ObjectMother {
     public static Customer customerWithOneOfEachRentalType(String name) {

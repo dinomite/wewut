@@ -1,4 +1,4 @@
-package original;
+package wewut;
 
 public abstract class Price {
     abstract double getCharge(int daysRented);

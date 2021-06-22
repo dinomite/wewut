@@ -1,7 +1,10 @@
-package original;
+package wewut.original;
 
 import org.junit.Before;
 import org.junit.Test;
+import wewut.Customer;
+import wewut.Movie;
+import wewut.Rental;
 
 import java.util.List;
 
@@ -85,7 +88,7 @@ public class CustomerTest {
         String result = "";
         for (Rental rental : rentals)
             result += String.format(
-                    "%s%s\t%s%s\n",
+                    "%s%s %s%s\n",
                     startsWith,
                     rental.getMovie().getTitle(),
                     rental.getCharge(),

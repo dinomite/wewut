@@ -1,4 +1,4 @@
-package original;
+package wewut;
 
 public class Movie {
     public enum Type {
